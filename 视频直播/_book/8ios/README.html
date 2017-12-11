@@ -1,0 +1,692 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>iOS视频软编码 | 内容概述</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../9yuv/README.html" />
+    
+    
+    <link rel="prev" href="../7ios/README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="6" data-basepath=".." data-revision="1482018129495">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         内容概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="01.html">
+            
+                
+                    <a href="../01.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         视频技术概述
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="2/README.html">
+            
+                
+                    <a href="../2/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         采集以及写入
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="3/README.html">
+            
+                
+                    <a href="../3/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         美颜滤镜效果
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="4/README.html">
+            
+                
+                    <a href="../4/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         视频编码技术
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="7ios/README.html">
+            
+                
+                    <a href="../7ios/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         iOS视频硬编码
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="6" data-path="8ios/README.html">
+            
+                
+                    <a href="../8ios/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         iOS视频软编码
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="9yuv/README.html">
+            
+                
+                    <a href="../9yuv/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         YUV颜色空间
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="5/README.html">
+            
+                
+                    <a href="../5/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         流媒体协议
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="6/README.html">
+            
+                
+                    <a href="../6/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         推流演示
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="10ios/README.html">
+            
+                
+                    <a href="../10ios/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         iOS中实现推流
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >内容概述</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_408">
+                    
+                        <h1 id="ios">iOS视频软编码</h1>
+<h3 id="">软编码介绍</h3>
+<ul>
+<li>软编码主要是利用CPU进行编码的过程, 具体的编码通常会用FFmpeg+x264</li>
+<li>FFmpeg<ul>
+<li>FFmpeg是一个非常强大的音视频处理库,包括视频采集功能、视频格式转换、视频抓图、给视频加水印等。</li>
+<li>FFmpeg在Linux平台下开发，但它同样也可以在其它操作系统环境中编译运行，包括Windows、Mac OS X等。</li>
+</ul>
+</li>
+<li>X264<ul>
+<li>H.264是ITU制定的视频编码标准</li>
+<li>而x264是一个开源的H.264/MPEG-4 AVC视频编码函数库[1]  ，是最好的有损视频编码器,里面集成了非常多优秀的算法用于视频编码.</li>
+</ul>
+</li>
+<li>关于软编码推荐博客(雷霄骅)<ul>
+<li><a href="http://blog.csdn.net/leixiaohua1020" target="_blank">http://blog.csdn.net/leixiaohua1020</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="macffmpeg">Mac安装/使用FFmpeg</h3>
+<ul>
+<li>安装<ul>
+<li>ruby -e &quot;$(curl -fsSkL raw.github.com/mxcl/homebrew/go)&quot;</li>
+<li>brew install ffmpeg</li>
+</ul>
+</li>
+<li>简单使用<ul>
+<li>转化格式: ffmpeg -i story.webm story.mp4</li>
+<li>分离视频: ffmpeg -i story.mp4 -vcodec copy -an demo.mp4</li>
+<li>分离音频: ffmpeg -i story.mp4 -acodec copy -vn demo.aac</li>
+</ul>
+</li>
+</ul>
+<h3 id="ffmpegios">编译FFmpeg(iOS)</h3>
+<ul>
+<li>下载编译FFmpeg所需要的脚本文件gas-preprocessor.pl<ul>
+<li>下载地址:  <a href="https://github.com/mansr/gas-preprocessor" target="_blank">https://github.com/mansr/gas-preprocessor</a></li>
+<li>复制gas-preprocessor.pl到/usr/sbin下，（这个应该是复制到/usr/local/bin）</li>
+<li>修改文件权限：chmod 777 /usr/local/bin/gas-preprocessor.pl</li>
+</ul>
+</li>
+<li>下载脚本FFmpeg脚本<ul>
+<li>地址: <a href="https://github.com/kewlbear/FFmpeg-iOS-build-script" target="_blank">https://github.com/kewlbear/FFmpeg-iOS-build-script</a></li>
+<li>解压，找到文件 build-ffmpeg.sh</li>
+<li>执行服本文件：./build-ffmpeg.sh</li>
+</ul>
+</li>
+</ul>
+<h3 id="x264">编译X264</h3>
+<ul>
+<li>下载x264<ul>
+<li>x264官网 下载x264源码，将其文件夹名称改为x264</li>
+<li><a href="http://www.videolan.org/developers/x264.html" target="_blank">http://www.videolan.org/developers/x264.html</a></li>
+</ul>
+</li>
+<li>下载gas-preprocessor(FFmpeg编译时已经下载过)</li>
+<li>下载x264 build shell<ul>
+<li>下载build-x264.sh 将文件build-x264.sh放在x264同一级目录里面，注意不是放在x264文件夹里面。</li>
+<li><a href="https://github.com/kewlbear/x264-ios" target="_blank">https://github.com/kewlbear/x264-ios</a></li>
+</ul>
+</li>
+<li>修改权限/执行脚本<ul>
+<li>sudo chmod u+x build-x264.sh</li>
+<li>sudo ./build-x264.sh</li>
+</ul>
+</li>
+</ul>
+<h3 id="iosffmpeg">iOS项目中集成FFmpeg</h3>
+<ul>
+<li>将编译好的文件夹拖入到工程中</li>
+<li>添加依赖库: libiconv.dylib/libz.dylib/libbz2.dylib/CoreMedia.framework/AVFoundation.framework</li>
+<li>初始化编码器</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-comment">/*
+ *  设置X264
+ */</span>
+- (<span class="hljs-keyword">int</span>)setX264ResourceWithVideoWidth:(<span class="hljs-keyword">int</span>)width height:(<span class="hljs-keyword">int</span>)height bitrate:(<span class="hljs-keyword">int</span>)bitrate
+{
+    <span class="hljs-comment">// 1.默认从第0帧开始(记录当前的帧数)</span>
+    framecnt = <span class="hljs-number">0</span>;
+
+    <span class="hljs-comment">// 2.记录传入的宽度&amp;高度</span>
+    encoder_h264_frame_width = width;
+    encoder_h264_frame_height = height;
+
+    <span class="hljs-comment">// 3.注册FFmpeg所有编解码器(无论编码还是解码都需要该步骤)</span>
+    av_register_all();
+
+    <span class="hljs-comment">// 4.初始化AVFormatContext: 用作之后写入视频帧并编码成 h264，贯穿整个工程当中(释放资源时需要销毁)</span>
+    pFormatCtx = avformat_alloc_context();
+
+    <span class="hljs-comment">// 5.设置输出文件的路径</span>
+    fmt = av_guess_format(<span class="hljs-literal">NULL</span>, out_file, <span class="hljs-literal">NULL</span>);
+    pFormatCtx-&gt;oformat = fmt;
+
+    <span class="hljs-comment">// 6.打开文件的缓冲区输入输出，flags 标识为  AVIO_FLAG_READ_WRITE ，可读写</span>
+    <span class="hljs-keyword">if</span> (avio_open(&amp;pFormatCtx-&gt;pb, out_file, AVIO_FLAG_READ_WRITE) &lt; <span class="hljs-number">0</span>){
+        printf(<span class="hljs-string">"Failed to open output file! \n"</span>);
+        <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+    }
+
+    <span class="hljs-comment">// 7.创建新的输出流, 用于写入文件</span>
+    video_st = avformat_new_stream(pFormatCtx, <span class="hljs-number">0</span>);
+
+    <span class="hljs-comment">// 8.设置 20 帧每秒 ，也就是 fps 为 20</span>
+    video_st-&gt;time_base<span class="hljs-variable">.num</span> = <span class="hljs-number">1</span>;
+    video_st-&gt;time_base<span class="hljs-variable">.den</span> = <span class="hljs-number">25</span>;
+
+    <span class="hljs-keyword">if</span> (video_st==<span class="hljs-literal">NULL</span>){
+        <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+    }
+
+    <span class="hljs-comment">// 9.pCodecCtx 用户存储编码所需的参数格式等等</span>
+    <span class="hljs-comment">// 9.1.从媒体流中获取到编码结构体，他们是一一对应的关系，一个 AVStream 对应一个  AVCodecContext</span>
+    pCodecCtx = video_st-&gt;codec;
+
+    <span class="hljs-comment">// 9.2.设置编码器的编码格式(是一个id)，每一个编码器都对应着自己的 id，例如 h264 的编码 id 就是 AV_CODEC_ID_H264</span>
+    pCodecCtx-&gt;codec_id = fmt-&gt;video_codec;
+
+    <span class="hljs-comment">// 9.3.设置编码类型为 视频编码</span>
+    pCodecCtx-&gt;codec_type = AVMEDIA_TYPE_VIDEO;
+
+    <span class="hljs-comment">// 9.4.设置像素格式为 yuv 格式</span>
+    pCodecCtx-&gt;pix_fmt = PIX_FMT_YUV420P;
+
+    <span class="hljs-comment">// 9.5.设置视频的宽高</span>
+    pCodecCtx-&gt;width = encoder_h264_frame_width;
+    pCodecCtx-&gt;height = encoder_h264_frame_height;
+
+    <span class="hljs-comment">// 9.6.设置帧率</span>
+    pCodecCtx-&gt;time_base<span class="hljs-variable">.num</span> = <span class="hljs-number">1</span>;
+    pCodecCtx-&gt;time_base<span class="hljs-variable">.den</span> = <span class="hljs-number">15</span>;
+
+    <span class="hljs-comment">// 9.7.设置码率（比特率）</span>
+    pCodecCtx-&gt;bit_rate = bitrate;
+
+    <span class="hljs-comment">// 9.8.视频质量度量标准(常见qmin=10, qmax=51)</span>
+    pCodecCtx-&gt;qmin = <span class="hljs-number">10</span>;
+    pCodecCtx-&gt;qmax = <span class="hljs-number">51</span>;
+
+    <span class="hljs-comment">// 9.9.设置图像组层的大小(GOP--&gt;两个I帧之间的间隔)</span>
+    pCodecCtx-&gt;gop_size = <span class="hljs-number">250</span>;
+
+    <span class="hljs-comment">// 9.10.设置 B 帧最大的数量，B帧为视频图片空间的前后预测帧， B 帧相对于 I、P 帧来说，压缩率比较大，也就是说相同码率的情况下，</span>
+    <span class="hljs-comment">// 越多 B 帧的视频，越清晰，现在很多打视频网站的高清视频，就是采用多编码 B 帧去提高清晰度，</span>
+    <span class="hljs-comment">// 但同时对于编解码的复杂度比较高，比较消耗性能与时间</span>
+    pCodecCtx-&gt;max_b_frames = <span class="hljs-number">5</span>;
+
+    <span class="hljs-comment">// 10.可选设置</span>
+    AVDictionary *param = <span class="hljs-number">0</span>;
+    <span class="hljs-comment">// H.264</span>
+    <span class="hljs-keyword">if</span>(pCodecCtx-&gt;codec_id == AV_CODEC_ID_H264) {
+        <span class="hljs-comment">// 通过--preset的参数调节编码速度和质量的平衡。</span>
+        av_dict_set(&amp;param, <span class="hljs-string">"preset"</span>, <span class="hljs-string">"slow"</span>, <span class="hljs-number">0</span>);
+
+        <span class="hljs-comment">// 通过--tune的参数值指定片子的类型，是和视觉优化的参数，或有特别的情况。</span>
+        <span class="hljs-comment">// zerolatency: 零延迟，用在需要非常低的延迟的情况下，比如视频直播的编码</span>
+        av_dict_set(&amp;param, <span class="hljs-string">"tune"</span>, <span class="hljs-string">"zerolatency"</span>, <span class="hljs-number">0</span>);
+    }
+
+    <span class="hljs-comment">// 11.输出打印信息，内部是通过printf函数输出（不需要输出可以注释掉该局）</span>
+    av_dump_format(pFormatCtx, <span class="hljs-number">0</span>, out_file, <span class="hljs-number">1</span>);
+
+    <span class="hljs-comment">// 12.通过 codec_id 找到对应的编码器</span>
+    pCodec = avcodec_find_encoder(pCodecCtx-&gt;codec_id);
+    <span class="hljs-keyword">if</span> (!pCodec) {
+        printf(<span class="hljs-string">"Can not find encoder! \n"</span>);
+        <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+    }
+
+    <span class="hljs-comment">// 13.打开编码器，并设置参数 param</span>
+    <span class="hljs-keyword">if</span> (avcodec_open2(pCodecCtx, pCodec,&amp;param) &lt; <span class="hljs-number">0</span>) {
+        printf(<span class="hljs-string">"Failed to open encoder! \n"</span>);
+        <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+    }
+
+    <span class="hljs-comment">// 13.初始化原始数据对象: AVFrame</span>
+    pFrame = av_frame_alloc();
+
+    <span class="hljs-comment">// 14.通过像素格式(这里为 YUV)获取图片的真实大小，例如将 480 * 720 转换成 int 类型</span>
+    avpicture_fill((AVPicture *)pFrame, picture_buf, pCodecCtx-&gt;pix_fmt, pCodecCtx-&gt;width, pCodecCtx-&gt;height);
+
+    <span class="hljs-comment">// 15.h264 封装格式的文件头部，基本上每种编码都有着自己的格式的头部，想看具体实现的同学可以看看 h264 的具体实现</span>
+    avformat_write_header(pFormatCtx, <span class="hljs-literal">NULL</span>);
+
+    <span class="hljs-comment">// 16.创建编码后的数据 AVPacket 结构体来存储 AVFrame 编码后生成的数据</span>
+    av_new_packet(&amp;pkt, picture_size);
+
+    <span class="hljs-comment">// 17.设置 yuv 数据中 y 图的宽高</span>
+    y_size = pCodecCtx-&gt;width * pCodecCtx-&gt;height;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<ul>
+<li>编码每一帧数据</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-comment">/*
+ * 将CMSampleBufferRef格式的数据编码成h264并写入文件
+ *
+ */</span>
+- (<span class="hljs-keyword">void</span>)encoderToH264:(CMSampleBufferRef)sampleBuffer
+{
+    <span class="hljs-comment">// 1.通过CMSampleBufferRef对象获取CVPixelBufferRef对象</span>
+    CVPixelBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
+
+    <span class="hljs-comment">// 2.锁定imageBuffer内存地址开始进行编码</span>
+    <span class="hljs-keyword">if</span> (CVPixelBufferLockBaseAddress(imageBuffer, <span class="hljs-number">0</span>) == kCVReturnSuccess) {
+        <span class="hljs-comment">// 3.从CVPixelBufferRef读取YUV的值</span>
+        <span class="hljs-comment">// NV12和NV21属于YUV格式，是一种two-plane模式，即Y和UV分为两个Plane，但是UV（CbCr）为交错存储，而不是分为三个plane</span>
+        <span class="hljs-comment">// 3.1.获取Y分量的地址</span>
+        UInt8 *bufferPtr = (UInt8 *)CVPixelBufferGetBaseAddressOfPlane(imageBuffer,<span class="hljs-number">0</span>);
+        <span class="hljs-comment">// 3.2.获取UV分量的地址</span>
+        UInt8 *bufferPtr1 = (UInt8 *)CVPixelBufferGetBaseAddressOfPlane(imageBuffer,<span class="hljs-number">1</span>);
+
+        <span class="hljs-comment">// 3.3.根据像素获取图片的真实宽度&amp;高度</span>
+        size_t width = CVPixelBufferGetWidth(imageBuffer);
+        size_t height = CVPixelBufferGetHeight(imageBuffer);
+        <span class="hljs-comment">// 获取Y分量长度</span>
+        size_t bytesrow0 = CVPixelBufferGetBytesPerRowOfPlane(imageBuffer,<span class="hljs-number">0</span>);
+        size_t bytesrow1  = CVPixelBufferGetBytesPerRowOfPlane(imageBuffer,<span class="hljs-number">1</span>);
+        UInt8 *yuv420_data = (UInt8 *)malloc(width * height *<span class="hljs-number">3</span>/<span class="hljs-number">2</span>);
+
+        <span class="hljs-comment">/* convert NV12 data to YUV420*/</span>
+        <span class="hljs-comment">// 3.4.将NV12数据转成YUV420数据</span>
+        UInt8 *pY = bufferPtr ;
+        UInt8 *pUV = bufferPtr1;
+        UInt8 *pU = yuv420_data + width*height;
+        UInt8 *pV = pU + width*height/<span class="hljs-number">4</span>;
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">0</span>;i&lt;height;i++)
+        {
+            memcpy(yuv420_data+i*width,pY+i*bytesrow0,width);
+        }
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>;j&lt;height/<span class="hljs-number">2</span>;j++)
+        {
+            <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">0</span>;i&lt;width/<span class="hljs-number">2</span>;i++)
+            {
+                *(pU++) = pUV[i&lt;&lt;<span class="hljs-number">1</span>];
+                *(pV++) = pUV[(i&lt;&lt;<span class="hljs-number">1</span>) + <span class="hljs-number">1</span>];
+            }
+            pUV+=bytesrow1;
+        }
+
+        <span class="hljs-comment">// 3.5.分别读取YUV的数据</span>
+        picture_buf = yuv420_data;
+        pFrame-&gt;data[<span class="hljs-number">0</span>] = picture_buf;              <span class="hljs-comment">// Y</span>
+        pFrame-&gt;data[<span class="hljs-number">1</span>] = picture_buf+ y_size;      <span class="hljs-comment">// U</span>
+        pFrame-&gt;data[<span class="hljs-number">2</span>] = picture_buf+ y_size*<span class="hljs-number">5</span>/<span class="hljs-number">4</span>;  <span class="hljs-comment">// V</span>
+
+        <span class="hljs-comment">// 4.设置当前帧</span>
+        pFrame-&gt;pts = framecnt;
+        <span class="hljs-keyword">int</span> got_picture = <span class="hljs-number">0</span>;
+
+        <span class="hljs-comment">// 4.设置宽度高度以及YUV各式</span>
+        pFrame-&gt;width = encoder_h264_frame_width;
+        pFrame-&gt;height = encoder_h264_frame_height;
+        pFrame-&gt;format = PIX_FMT_YUV420P;
+
+        <span class="hljs-comment">// 5.对编码前的原始数据(AVFormat)利用编码器进行编码，将 pFrame 编码后的数据传入pkt 中</span>
+        <span class="hljs-keyword">int</span> ret = avcodec_encode_video2(pCodecCtx, &amp;pkt, pFrame, &amp;got_picture);
+        <span class="hljs-keyword">if</span>(ret &lt; <span class="hljs-number">0</span>) {
+            printf(<span class="hljs-string">"Failed to encode! \n"</span>);
+
+        }
+
+        <span class="hljs-comment">// 6.编码成功后写入 AVPacket 到 输入输出数据操作着 pFormatCtx 中，当然，记得释放内存</span>
+        <span class="hljs-keyword">if</span> (got_picture==<span class="hljs-number">1</span>) {
+            framecnt++;
+            pkt<span class="hljs-variable">.stream_index</span> = video_st-&gt;index;
+            ret = av_write_frame(pFormatCtx, &amp;pkt);
+            av_free_packet(&amp;pkt);
+        }
+
+        <span class="hljs-comment">// 7.释放yuv数据</span>
+        free(yuv420_data);
+    }
+
+    CVPixelBufferUnlockBaseAddress(imageBuffer, <span class="hljs-number">0</span>);
+}
+</code></pre>
+<ul>
+<li>释放资源</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-comment">/*
+ * 释放资源
+ */</span>
+- (<span class="hljs-keyword">void</span>)freeX264Resource
+{
+    <span class="hljs-comment">// 1.释放AVFormatContext</span>
+    <span class="hljs-keyword">int</span> ret = flush_encoder(pFormatCtx,<span class="hljs-number">0</span>);
+    <span class="hljs-keyword">if</span> (ret &lt; <span class="hljs-number">0</span>) {
+        printf(<span class="hljs-string">"Flushing encoder failed\n"</span>);
+    }
+
+    <span class="hljs-comment">// 2.将还未输出的AVPacket输出出来</span>
+    av_write_trailer(pFormatCtx);
+
+    <span class="hljs-comment">// 3.关闭资源</span>
+    <span class="hljs-keyword">if</span> (video_st){
+        avcodec_close(video_st-&gt;codec);
+        av_free(pFrame);
+    }
+    avio_close(pFormatCtx-&gt;pb);
+    avformat_free_context(pFormatCtx);
+}
+
+<span class="hljs-keyword">int</span> flush_encoder(AVFormatContext *fmt_ctx,<span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> stream_index)
+{
+    <span class="hljs-keyword">int</span> ret;
+    <span class="hljs-keyword">int</span> got_frame;
+    AVPacket enc_pkt;
+    <span class="hljs-keyword">if</span> (!(fmt_ctx-&gt;streams[stream_index]-&gt;codec-&gt;codec-&gt;capabilities &amp;
+          CODEC_CAP_DELAY))
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+
+    <span class="hljs-keyword">while</span> (<span class="hljs-number">1</span>) {
+        enc_pkt<span class="hljs-variable">.data</span> = <span class="hljs-literal">NULL</span>;
+        enc_pkt<span class="hljs-variable">.size</span> = <span class="hljs-number">0</span>;
+        av_init_packet(&amp;enc_pkt);
+        ret = avcodec_encode_video2 (fmt_ctx-&gt;streams[stream_index]-&gt;codec, &amp;enc_pkt,
+                                     <span class="hljs-literal">NULL</span>, &amp;got_frame);
+        av_frame_free(<span class="hljs-literal">NULL</span>);
+        <span class="hljs-keyword">if</span> (ret &lt; <span class="hljs-number">0</span>)
+            <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">if</span> (!got_frame){
+            ret=<span class="hljs-number">0</span>;
+            <span class="hljs-keyword">break</span>;
+        }
+        ret = av_write_frame(fmt_ctx, &amp;enc_pkt);
+        <span class="hljs-keyword">if</span> (ret &lt; <span class="hljs-number">0</span>)
+            <span class="hljs-keyword">break</span>;
+    }
+    <span class="hljs-keyword">return</span> ret;
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../7ios/README.html" class="navigation navigation-prev " aria-label="Previous page: iOS视频硬编码"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../9yuv/README.html" class="navigation navigation-next " aria-label="Next page: YUV颜色空间"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

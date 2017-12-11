@@ -9,21 +9,22 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) VideoCapture *videoCapture;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)startCapturing:(id)sender {
+    [self.videoCapture startCapturing:self.view];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)stopCapturing:(id)sender {
+    [self.videoCapture stopCapturing];
 }
+
 
 
 @end
